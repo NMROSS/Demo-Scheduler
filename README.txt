@@ -29,16 +29,9 @@ Set-up Database
 Set-Up Web App using IIS:
 	 Open 'index.php' using a text editor and change the values 'cairo.cms.waikato.ac.nz' to your SQL server location 
 	 then change VirtualChair to the Database you created in the first step on the line containing 
-		'$conn = sqlsrv_connect('cairo.cms.waikato.ac.nz', array("Database" => "VirtualChair"));' 
+	'$conn = sqlsrv_connect('cairo.cms.waikato.ac.nz', array("Database" => "VirtualChair"));' 
 	 Move the contents of 'Web Application' into '\wwww\wwwroot\'
- 
-Compiling Desktop Application:
-	 Edit 'Desktop Application\WindowsFormsApplication1\DatabaseQuery.cs' and change DataBaseName and SQLServer to your database name and server.
-	 on this line 'static private string connectionParams = "Data Source=cairo.cms.waikato.ac.nz;Initial Catalog=VirtualChair;Integrated Security=True";'
-	 Open 'WindowsFormsApplication1.sln' 
-	 Click 'Build > Build Solution'
-	 A executable will be located in 'Desktop Application\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe' which you can create a short cut to
-	 Finally Run the executable
+
  
  
 
